@@ -1,3 +1,4 @@
+import static java.lang.Math.*;
 
 public class ArrayAbsoluteValue {
     /**
@@ -8,7 +9,17 @@ public class ArrayAbsoluteValue {
      * @param nums an array.
      * @return the absolute value array of nums.
      */
-    public int[] getArrayAbs(int[] nums){
-        return null;
+    public int[] getArrayAbs(int[] nums) {
+        //using math abs to change - to +
+        /**for (int index = 0; index < nums.length; index++) {
+            nums[index] = abs(nums[index]);
+        }*/
+
+        //without using abs
+        for (int index = 0; index < nums.length; index++) {
+            if(nums[index] < 0)
+                nums[index] = -nums[index];
+        }
+        return nums;
     }
 }
