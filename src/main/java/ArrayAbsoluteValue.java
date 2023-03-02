@@ -11,7 +11,7 @@ public class ArrayAbsoluteValue {
      */
     public int[] getArrayAbs(int[] nums) {
         //using math abs to change - to +
-        /**for (int index = 0; index < nums.length; index++) {
+        /*for (int index = 0; index < nums.length; index++) {
             nums[index] = abs(nums[index]);
         }*/
 
